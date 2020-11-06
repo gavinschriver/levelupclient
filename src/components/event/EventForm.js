@@ -4,7 +4,7 @@ import { EventContext } from "./EventProvider";
 
 export const EventForm = (props) => {
   const { games, getGames } = useContext(GameContext);
-  const { createEvent } = useContext(EventContext);
+  const { createEvent, joinEvent } = useContext(EventContext);
   const [currentEvent, setEvent] = useState({
     time: "",
     date: "",
